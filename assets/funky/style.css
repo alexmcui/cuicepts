@@ -1,6 +1,55 @@
+.cuicepts {
+    font-family: 'Fjalla One';
+    font-style: thin;
+    font-weight: normal;
+    font-size: 1.5vw;
+    position: absolute;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.cuicepts:hover {
+    color: rgba(30, 30, 30, 0.68);
+}
+.sdlv {
+    font-family: 'Fjalla One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8vw;
+    position: absolute;
+    bottom: -9%;
+    right: 12.25vw;
+    margin: 0px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    transform: rotate(-1.57deg);
+    transition: 0.5s;
+    text-decoration: none;
+} 
+.sdlv:hover {
+    color: rgba(30, 30, 30, 0.68);
+}
+
+#mid-right {
+    position: absolute;
+    width: 40%;
+    height: 25%;
+    right: 28.2%;
+    bottom: 37.3%;
+}
+
+#center {
+    position: absolute;
+    width: 144px;
+    height: 38px;
+    left: 648px;
+    top: 18px;
+}
+
 .trail { /* className for the trail elements */
     position: absolute;
-    height: 6px; width: 6px;
+    height: 4px; width: 4px;
     border-radius: 3px;
     background: white;
-  }
+}
