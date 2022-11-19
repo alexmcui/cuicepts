@@ -1,3 +1,37 @@
+body {
+    /* Location of the image */
+    background-image: url('images/background01.JPG');
+    
+    /* Image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
+    
+    /* Makes the image fixed in the viewport so that it doesn't move when 
+       the content height is greater than the image height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based on its container's size */
+    background-size: cover;
+    
+    /* Pick a solid background color that will be displayed while the background image is loading */
+    background-color:#464646;
+    
+    /* SHORTHAND CSS NOTATION
+     * background: url(background-photo.jpg) center center cover no-repeat fixed;
+     */
+  }
+  
+  /* For mobile devices */
+  @media only screen and (max-width: 767px) {
+    body {
+      /* The file size of this background image is 93% smaller
+       * to improve page load speed on mobile internet connections */
+      background-image: url(assets/funky/style.css);
+    }
+      }
+
 .cuicepts {
     font-family: 'Fjalla One';
     font-style: thin;
@@ -8,6 +42,7 @@
     text-align: center;
     transition: 0.5s;
     text-decoration: none;
+    display: flex;
 }
 .cuicepts:hover {
     color: rgba(30, 30, 30, 0.68);
@@ -26,6 +61,7 @@
     transform: rotate(-1.57deg);
     transition: 0.5s;
     text-decoration: none;
+    display: flex;
 } 
 .sdlv:hover {
     color: rgba(30, 30, 30, 0.68);
@@ -37,14 +73,15 @@
     height: 25%;
     right: 28.2%;
     bottom: 37.3%;
+    display: flex;
 }
 
 #center {
     position: absolute;
-    width: 144px;
-    height: 38px;
-    left: 678px;
-    top: 18px;
+    width: 50%;
+    left: 47.4%;
+    top: 2%;
+    display: flex;
 }
 
 .trail { /* className for the trail elements */
@@ -55,19 +92,25 @@
 }
 
 .clock {
-    width: 70px;
-    text-align: center;
     position: absolute;
-    left: 678px;
-    top: 44px;
+    left: 48.3%;
+    top: 5.5%;
+    display: flex;
+    text-align: center;
+    transition: 0.5s;
 }
 
 .clock-time, .clock-ampm {
     font-family: 'Fjalla One';
-    font-size: 10px;
-    color: white;
+    font-size: 1vw;
+    color: rgb(255, 255, 255, .85);
 }
 
 .clock-time {
-    font-size: 10px;
+    font-size: 1vw;
+    left: 55%;
+}
+
+.clock:hover {
+    color: rgba(30, 30, 30, 0.68);
 }
